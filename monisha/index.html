@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%px;
+            padding: 0px;
+        }
+        .nav{
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            justify-content: space-between;
+            display: flex;
+        }
+        .logo{
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            margin-left: 20px;
+        }
+        .nav ul{
+            display: flex;
+           margin-top: 5px;
+        }
+        nav ul li{
+            padding: 10px;
+            display: inline;
+            margin: 10px;
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav ul li a:hover{
+           text-decoration: none;
+           color: blue;
+           font-weight: bold;
+        }
+        a{
+            color: black;
+        }
+        .sec2{
+            background-color: white;
+            width: 100%;
+            height: 680px;
+            margin-top: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .sec2 >.left{
+            background-color:whitw;
+            height:500px;
+            width: 1000px;
+        }
+        .sec2>.right{
+            background-color:white;
+            height:500px;
+            width: 1000px;
+        }
+        .right>.cont{
+            margin-top: 200px;
+            margin-left: 50px;
+        }
+        button{
+            background-color: blue;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .cont> h1{
+            font-size: 50px;
+        }
+        button a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sec3{
+            background-color: white;
+            width: 100%;
+            height: 630px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        div .cont1{
+            margin-top:100px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        .flex-container > div {
+             background-color: #f1f1f1;
+             width: 300px;
+             margin: 10px;
+             margin-left: 50px;
+             text-align: center;
+             line-height: 300px;
+             font-size: 30px;
+        }
+        footer{
+            background-color: black;
+            height: 500px;
+            width: 100%;
+        }
+        input{
+            width: 300px;
+            height: 40px;
+        }
+        footer button{
+            width: 200px;
+        }
+        footer button a{
+            color: white;
+        }
+        .flex-container div img:hover{
+           transform: scaleX(1.1);
+        }
+        .nav div>h1{
+          color: white;
+             text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+         }
+         .review{
+            background-color: white;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+         }
+         .rev1{
+            background-color: white;
+            height: 250px;
+            width: 450px;
+            margin-top: 70px;
+         }
+         .rev1:hover{
+            box-shadow: 10px 10px;
+         }
+         .card {
+            background-color: #fff;
+            padding: 15px;
+            border: none;
+            height: 250px;
+            margin-top: 10px
+        }
+        .card:hover{
+            box-shadow: 10px 10px rgb(244, 239, 239);
+         }
+        .u-color {
+            color: blue
+        }
+
+        .user-image img {
+            border: 3px solid #00f;
+            padding: 2px;
+            margin-left: 80%;
+            border-radius: 50%;
+        }
+        .post{
+            background-color: white;
+            height: 450px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .post> .card1{
+            background-color: white;
+            height:420px;
+            width: 300px;
+            margin-top: 10px;
+            border: 5px solid white;
+        }
+        .post> .card1:hover{
+            border-color: blue;
+        }
+        .card1>button{
+            margin-left: 90px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h1>HealthCare.</h1>
+        </div>
+        <ul class="nav_bar">
+            <li><a href="#sec2">Home</a></li>
+            <li><a href="#sec3">About</a></li>
+            <li><a href="#sec4">Facility</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#post">Post</a></li>
+        </ul>
+    </nav>
+    <!-- section2 -->
+    <a name="sec2"></a>
+    <h1 style="text-align:center;">Services</h1>
+    <div class="sec2">
+        <div class="left">
+            <img src="doct.jpg" alt="" height="500px" width="700px">
+        </div>
+        <div class="right">
+            <div class="cont">
+                <h1>Stay Safe, Stay Healthy. <br> Caring For Your Life. </h1>
+                <button><a href="#">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- section3 -->
+    <a name="sec3"></a>
+    <div class="sec3">
+        <div class="left">
+            <div class="cont1">
+                <h2> <i class="fa fa-ambulance" aria-hidden="true" style="color:blue;"></i>Ambulance Services</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <br>
+
+               <h2><i class="fa fa-ambulance" aria-hidden="true"  style="color:blue;"></i> Room</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <br>
+
+               <h2><i class="fa fa-ambulance" aria-hidden="true"  style="color:blue;"></i> Checkup</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <br>
+            </div>
+            
+        </div>
+        <div class="right">
+            <img src="doct1.jpg" alt="" height="500px" width="700px">
+        </div>
+    </div>
+
+    <!-- facility -->
+    <a name="sec4"></a>
+        <h1 style="text-align:center; font-size:60px;" >Our Facilities</h1>
+    <div class="flex-container">
+        <div><img src="img1.jpg" alt="" width="300px" height="300px"> </div>
+        <div><img src="img2.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img3.jpg" alt="" width="300px" height="300px"></div>  
+        <div><img src="img4.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img5.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img6.jpg" alt="" width="300px" height="300px"></div>  
+        <div><img src="img7.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img8.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img9.jpg" alt="" width="300px" height="300px"></div>  
+        <div><img src="img10.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img11.jpg" alt="" width="300px" height="300px"></div>
+        <div><img src="img12.jpg" alt="" width="300px" height="300px"></div>  
+      </div>
+<!-- 
+      review -->
+      <a name="review"></a>
+      <h1 style="text-align:center;font-size:60px;">People Review</h1>
+    <div class="review">
+        <div class="rev1">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Alex Smith</span> <span class="u-color">Designer | Developer</span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/UUW3zLx.jpg" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rev1">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Alex Smith</span> <span class="u-color">Designer | Developer</span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/UUW3zLx.jpg" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rev1">
+            <div class="card"> <i class="fa fa-quote-left u-color"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="user-about"> <span class="font-weight-bold d-block">Alex Smith</span> <span class="u-color">Designer | Developer</span>
+                        <div class="d-flex flex-row mt-1"> <i class="fa fa-star u-color"></i> <i class="fa fa-star u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> <i class="fa fa-star-o u-color"></i> </div>
+                    </div>
+                    <div class="user-image"> <img src="https://i.imgur.com/UUW3zLx.jpg" class="rounded-circle" width="70"> </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- post -->
+<a name="post"></a>
+    <h1 style="text-align: center; font-size: 60px;">Post</h1>
+        <div class="post" >
+            <div class="card1">
+                <img src="img7.jpg" alt="" height="200px" width="290px">
+                <p>Jan 5,2021</p>
+                <h3>Post Title Goes Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quam, similique asperiores deleniti excepturi in dolorum animi esse facilis optio ipsa ut voluptates </p>
+                <button>Read More</button>
+             </div>
+            <div class="card1">
+                <img src="img9.jpg" alt="" height="200px" width="290px">
+                <p>Jan 5,2021</p>
+                <h3>Post Title Goes Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quam, similique asperiores deleniti excepturi in dolorum animi esse facilis optio ipsa ut voluptates </p>
+                <button>Read More</button>
+            </div>
+            <div class="card1">
+                <img src="img11.jpg" alt="" height="200px" width="290px">
+                <p>Jan 5,2021</p>
+                <h3>Post Title Goes Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quam, similique asperiores deleniti excepturi in dolorum animi esse facilis optio ipsa ut voluptates </p>
+                <button>Read More</button>
+            </div>
+        </div>
+        
+      <a name="contact"></a>
+      <footer>
+        <center>
+        <h1 style="color:white;">Make An Appointment</h1>
+        <input type="text" placeholder="Full Name"> <br> <br>
+        <input type="pno" placeholder="Phone"> <br> <br>
+        <input type="mail" placeholder="Email"> <br> <br>
+        <datalist id="browsers">
+            <option value="09-11Am">
+            <option value="12-30Pm">
+            <option value="03-00Pm">
+            <option value="09-30Pm">
+        </datalist>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea> <br>
+        <button> <a href="#">Make Appointment</a></button>
+    </center>
+      </footer>
+</body>
+</html>
